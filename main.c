@@ -36,11 +36,6 @@ int main() {
     float *y2 = (float*)malloc(sizeof(float) * n);
     float *z = (float*)malloc(sizeof(float) * n);
 
-    if (!x1 || !x2 || !y1 || !y2 || !z) {
-        fprintf(stderr, "Memory allocation failed\n");
-        return 1;
-    }
-
     srand((unsigned int)time(NULL));
     initialize_array(x1, n);
     initialize_array(x2, n);
